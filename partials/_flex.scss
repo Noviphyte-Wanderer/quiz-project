@@ -1,0 +1,7 @@
+@mixin flex-adjust($flex-dir: row, $justify-cont: flex-start, $align-is: flex-start ){
+    display: flex;
+    flex-direction: $flex-dir;
+    justify-content: $justify-cont;
+    align-items: $align-is;
+}
+

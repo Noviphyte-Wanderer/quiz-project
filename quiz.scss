@@ -1,0 +1,93 @@
+@import "./partials/flex";
+@import "./partials/space";
+
+
+#quiz-section{
+    margin-top: -100px;
+}
+
+#quiz-container{
+    width: min(50rem, 40vw);
+    max-width: 50rem;
+    min-width: 20rem;
+}
+
+#question-header{
+    @include flex-adjust( row, center);
+    position: relative;
+    width: 100%;
+
+    #question-number{
+        position: absolute;
+        left: 0;
+    }
+    #question{
+        
+        width: 80%;
+        text-align: center;
+    }
+}
+
+.choices-container{
+    @include flex-adjust(column, flex-start, flex-start);
+    border: 2px solid var(--container-border-color);
+    width: 100%;
+}
+
+.choice-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    
+    label{
+        width: calc(100% - 40px);
+        padding: 5px;
+        font-size: 2.0rem;
+    }
+    input[type="radio"]{
+        width: 20px;
+        vertical-align: center;
+        margin: 0 20px;
+    }
+}
+
+
+
+#result{
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#submit{
+    margin: 20px 0;
+}
+
+/* Answer Distinctions */
+.correct{
+    background-color: rgb(30, 202, 30);
+}
+.incorrect{
+    background-color: rgb(255, 29, 29);
+}
+
+
+
+/* Media Adjustments */
+@media (max-width: 70rem){
+    #question-number, #question{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 55rem){
+    #question-number, #question{
+        font-size: 1.75rem;
+    }
+}

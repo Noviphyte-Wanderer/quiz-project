@@ -1,0 +1,66 @@
+[
+    {
+        "question": "Solve for x.\n3x = 15",
+        "choice1": "5",
+        "choice2": "3",
+        "choice3": "8",
+        "choice4": "2",
+        "answer": 1
+    },
+    {
+        "question": "Solve for x.\n5/(3x)-6=13",
+        "choice1": "2/3",
+        "choice2": "5/57",
+        "choice3": "57/5",
+        "choice4": "-1/39",
+        "answer": 2
+    },
+    {
+        "question": "Solve for x.\n3x+9=12",
+        "choice1": "-5",
+        "choice2": "7",
+        "choice3": "1",
+        "choice4": "9",
+        "answer": 3
+    },
+    {
+        "question": "You want to find the price of a shirt that is 30% its original price. What expression can you make to solve this problem?",
+        "choice1": "30p",
+        "choice2": "30 + p",
+        "choice3": "p * 0.3",
+        "choice4": "p - 0.3p",
+        "answer": 4
+    },
+    {
+        "question": "Amy and Jack have 20 apples. Jack has three times as many apples as Amy. How many apples does Jack have?",
+        "choice1": "15",
+        "choice2": "12",
+        "choice3": "5",
+        "choice4": "8",
+        "answer": 1
+    },
+    {
+        "question": "Solve for x. x + 20 = 9x + 8",
+        "choice1": "-1.5",
+        "choice2": "2/3",
+        "choice3": "-2/3",
+        "choice4": "1.5",
+        "answer": 4
+    },
+    {
+        "question": "Leslie and Jamie got 300 dollars in earnings doing a job together. They shared the money based on how much effort they made. Leslie did double the work than Jamie. How much does Jamie get?",
+        "choice1": "100",
+        "choice2": "200",
+        "choice3": "250",
+        "choice4": "50",
+        "answer": 1
+    },
+    {
+        "question": "John has 50 feet of fencing, and wants to created a pen with twice the length as the width. Find the width of the pen.",
+        "choice1": "12",
+        "choice2": "8",
+        "choice3": "6.25",
+        "choice4": "12.5",
+        "answer": 3
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "question": "If a grassy plain is verdant, it means it is...",
+        "choice1": "barren",
+        "choice2": "green",
+        "choice3": "dry",
+        "choice4": "moist",
+        "answer": 2
+    },
+    {
+        "question": "Which of these 4 words best describes a red-faced expression?",
+        "choice1": "fuming",
+        "choice2": "cheerful",
+        "choice3": "dreamy",
+        "choice4": "sick",
+        "answer": 1
+    },
+    {
+        "question": "Ten thousand men vs 50 people. Somehow, the 50 subdued them. To Subdue most likely means",
+        "choice1": "fall",
+        "choice2": "endure",
+        "choice3": "overcome",
+        "choice4": "surrender",
+        "answer": 3
+    },
+    {
+        "question": "His house is a mess, and he was left in this wretched state. Wretched most likely means...",
+        "choice1": "energetic",
+        "choice2": "clean",
+        "choice3": "peaceful",
+        "choice4": "miserable",
+        "answer": 4
+    }
+]

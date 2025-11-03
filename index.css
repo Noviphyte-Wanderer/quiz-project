@@ -1,0 +1,205 @@
+:root {
+  --primary-color: #224192;
+  --container-color: rgb(84, 217, 250);
+  --container-border-color: rgb(8, 33, 109);
+  --button-border-color: rgb(17, 65, 57);
+  --button-color: rgb(39, 235, 189);
+  --button-hover-color: rgb(166, 255, 249);
+  --button-hover-text-color: rgb(19, 22, 57);
+  --footer-color: rgb(5, 11, 46);
+  --footer-border-color: #000;
+  --bright-text: #fff;
+  --primary-fonts: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  font-family: var(--primary-fonts);
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+#site-name {
+  color: var(--bright-text);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.inner-container {
+  background-color: var(--container-color);
+  border: 2.5px solid var(--container-border-color);
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  border: 2px solid var(--button-border-color);
+  width: 10rem;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--button-color);
+  font-size: 1.5rem;
+  transition: transform 0.04s;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-color);
+  color: var(--button-hover-text-color);
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: white;
+  color: gray;
+}
+
+/* ID-SPECIFIC STYLES */
+#site-name {
+  padding: 5px;
+}
+
+#footer {
+  padding: 5px;
+  background-color: var(--footer-color);
+  border: 2px solid var(--footer-border-color);
+  color: #fff;
+}
+
+/* FLEXBOX UTILITIES */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.justify-even {
+  justify-content: space-evenly;
+}
+
+.align-c {
+  align-items: center;
+}
+
+/* NAV UTILITIES */
+.nav {
+  padding-block: 15px;
+  background-color: var(--container-color);
+  border: 2px solid var(--container-border-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #000;
+  padding: 5px;
+}
+.nav a:hover {
+  color: #bbb !important;
+  background-color: rgb(9, 5, 55);
+}
+.nav a:active {
+  color: #000 !important;
+  background-color: #fff;
+}
+.nav a:visited {
+  color: rgb(80, 0, 0);
+  text-decoration: underline;
+}
+.nav a:focus {
+  border-color: #000;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#top-nav {
+  padding: 15px;
+}
+
+.list-item > a::before {
+  content: "Question ";
+}
+
+.soc-med-link {
+  font-size: 4rem;
+  color: white;
+}
+.soc-med-link i {
+  transition: transform 0.05s;
+}
+.soc-med-link i:hover {
+  transform: scale(1.1);
+}
+.soc-med-link i:active {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=index.css.map */

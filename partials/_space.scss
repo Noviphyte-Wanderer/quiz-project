@@ -1,0 +1,9 @@
+@mixin space-adjuster($w: auto, $pad: auto, $margin: auto){
+    width: $w;
+    padding: $pad;
+    margin: $margin;
+}
+
+@mixin width-adjuster($max-w){
+    max-width: $max-w;
+}

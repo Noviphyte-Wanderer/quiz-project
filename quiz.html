@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Quiz - Main</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header" class="header">
+        <h1 id="site-name">TEST SITE NAME</h1>
+        <nav id="top-nav" class="nav">
+            <ul class="horizontal">
+                <li><a href="./index.html" id="home-link">HOME</a></li>
+                <li><a href="#" id="algebra-link">Algebra</a></li>
+                <li><a href="#" id="vocab-link">Vocabulary</a></li>
+                <li><a href="#" id="history-link">History</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="container fixed" id="quiz-section">
+        <div id="quiz-container" class="inner-container flex-center flex-col">
+            <div id="question-header">
+                <h2 id="question-number">Q#</h2>
+                <h3 id="question">Test Question</h2>
+            </div>
+            
+            <div class="choices-container">
+                <div class="choice-container">
+                    <input id="choice-1" type="radio" name="choice" value="A"/>
+                    <label for="choice-1" class="choice"> A</label>
+                </div>
+                <div class="choice-container">
+                    <input id="choice-2" type="radio" name="choice" value="B"/>
+                    <label for="choice-2" class="choice"> B</label>
+                </div>
+                <div class="choice-container">
+                    <input id="choice-3" type="radio" name="choice" value="C"/>
+                    <label for="choice-3" class="choice"> C</label>
+                </div>
+                <div class="choice-container">
+                    <input id="choice-4" type="radio" name="choice" value="D"/>
+                    <label for="choice-4" class="choice"> D</label>
+                </div>
+            </div>
+            <p id="result" class="hidden"></p>
+            <button id="submit" class="btn">SUBMIT</button>
+        </div>
+    </div>
+    <footer id="footer" class="footer">
+        <address id="address">
+            Casual Wanderer<br/>
+            dgxrmm2000@protonmail.com
+        </address>
+        <a href="https://codepen.io/CasualWanderer20XX" class="soc-med-link"><i class="icon fa-brands fa-codepen"></i></a>
+        <a href="https://github.com/Noviphyte-Wanderer" class="soc-med-link"><i class="icon fa-brands fa-github"></i></a>
+    </footer>
+    <script src="./quiz.js"></script>
+</body>
+</html>

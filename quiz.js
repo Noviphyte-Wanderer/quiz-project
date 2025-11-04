@@ -66,7 +66,7 @@ const nextQuestion = () => {
     questionCounter++;
     
     if (questionCounter > MAX_QUESTIONS || availableQuestions.length === 0){
-        localStorage.setItem("percentage", JSON.stringify(100 * (numberCorrect / totalQuestions).toFixed(2)));
+        localStorage.setItem("percentage", JSON.stringify(100 * (numberCorrect / totalQuestions).toFixed(3)));
         window.location.assign("./results.html");
     } else {
     

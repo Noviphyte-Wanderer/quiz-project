@@ -10,12 +10,13 @@ let questions = [];
 const questionText = document.getElementById("question");
 const questionNumber = document.getElementById("question-number");
 const result = document.getElementById('result');
+const extraComments = document.getElementById('extra-commentary');
 
 // CHOICE POINTERS
 const choices = [...document.getElementsByClassName('choice')];
 const submitBtn = document.getElementById('submit');
 
-const MAX_QUESTIONS = 8;
+let MAX_QUESTIONS = 8;
 
 //Booleans
 let acceptingAnswers = true;
@@ -47,9 +48,15 @@ const setQuestionSet = async () => {
     switch (quizType){
         case "algebra":
             questions = await fetchQuestions("../json/algebraQuestions.json");
+            MAX_QUESTIONS = questions.length;
             break;
         case "vocabulary":
             questions = await fetchQuestions("../json/vocabQuestions.json");
+            MAX_QUESTIONS = questions.length;
+            break;
+        case "history":
+            questions = await fetchQuestions("..json/historyQuestions.json");
+            MAX_QUESTIONS = questions.length;;
             break;
         default:
             questions = [];
@@ -100,12 +107,16 @@ const checkAnswer = (choice) => {
     result.classList.add(classToApply);
     result.innerText = (isCorrect) ? "CORRECT" : "INCORRECT";
     result.style.visibility = "visible";
+    const extraComment = currentQuestion.has("extra-commentary");
+    extraComments.style.visibility = (extraComment) ? "visible" : "hidden";
     numberCorrect += isCorrect ? 1 : 0;
     setTimeout(() => {
         choice.parentElement.classList.remove(classToApply);
         result.innerText = "";
         result.style.visibility = "hidden";
         result.classList.remove(classToApply);
+
+        extraComments.innerText = (extraComment) ? extraComment : "";
         nextQuestion();
     }, 1200);
     

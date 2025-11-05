@@ -1,0 +1,37 @@
+[
+    {
+        "question": "When was the Declaration of Independence written and signed?",
+        "choice1": "1774",
+        "choice2": "1775",
+        "choice3": "1776",
+        "choice4": "1777",
+        "answer": 3
+    },
+    {
+        "question": "What was the name of the ship the Pilgrims traveled upon to America in 1620?",
+        "choice1": "Melbourne",
+        "choice2": "Mayflower",
+        "choice3": "Fortune",
+        "choice4": "Jaybird",
+        "answer": 2,
+        "extra-commentary": "The Mayflower was the ship Pilgrims traveled to Plymouth in 1620. The Fortune was traveled upon in 1621."
+    },
+    {
+        "question": "What was the battle that ended the Revolutionary War?",
+        "choice1": "Battle of Gettysburg",
+        "choice2": "Battle of Trenton",
+        "choice3": "Battle of Baton Rouge",
+        "choice4": "Battle of Yorktown",
+        "answer": 4,
+        "extra-commentary": "It was the Battle of Yorktown that ended with the surrender of the British forces in October 19, 1781."
+    },
+    {
+        "question": "When was the blueprint for today's American government really established and what was the document that declared it?",
+        "choice1": "1776, Declaration of Independence",
+        "choice2": "1781, Articles of Confederation",
+        "choice3": "1789, U.S. Constitution",
+        "choice4": "1863, Emancipation Proclamation",
+        "answer": 3,
+        "extra-commentary": "While the Articles of Confederation was another governmental framework that came before the U.S. Constitution, it was the U.S. Constitution after it that really set in stone the currnent U.S. government as we know today."
+    }
+]

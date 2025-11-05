@@ -148,6 +148,7 @@ h3 {
   border: 2px solid var(--container-border-color);
   font-size: 1.5rem;
   font-weight: 500;
+  width: 100%;
 }
 .nav a {
   text-decoration: none;
@@ -203,4 +204,23 @@ h3 {
 .soc-med-link i:active {
   background-color: white;
   color: black;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 1.2rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=index.css.map */

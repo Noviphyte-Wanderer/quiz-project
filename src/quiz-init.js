@@ -15,7 +15,7 @@ topicLinks.forEach(topic => {
         setTitle();
         setQuizType();
     })
-})
+});
 
 const setQuizType = () => {
     localStorage.setItem("quizType", JSON.stringify(quizType));

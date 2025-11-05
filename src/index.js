@@ -1,20 +1,14 @@
-const algebraLink = document.getElementById('algebra-link');
-const vocabLink = document.getElementById('vocab-link');
-const historyLink = document.getElementById('history-link');
+const topicLinks = [...document.getElementsByClassName("topic-link")];
 
 let quizType = "";
 
-algebraLink.addEventListener("click", () => {
-    quizType = "algebra";
-    setQuizType();
-});
-vocabLink.addEventListener("click", () => {
-    quizType = "vocabulary";
-    setQuizType();
-});
-historyLink.addEventListener("click", () => {
-    quizType = "history";
-    setQuizType();
+topicLinks.forEach(topic => {
+    const topicRegex = /[a-zA-z]+(?=\-link)/g;
+    topic.addEventListener("click", (e) => {
+        quizType = e.target.id.match(topicRegex)[0];
+        setTitle();
+        setQuizType();
+    })
 });
 
 const setQuizType = () => {

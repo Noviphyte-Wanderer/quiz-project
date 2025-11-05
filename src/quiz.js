@@ -22,6 +22,9 @@ let MAX_QUESTIONS = 8;
 //Booleans
 let acceptingAnswers = true;
 
+//Global data.
+let classToApply = "";
+
 // Set Questions
 const fetchQuestions = async (link) => {
     try{
@@ -33,7 +36,6 @@ const fetchQuestions = async (link) => {
         console.error("ERROR OCCURED!", err);
     }
 }
-
 
 /* Starts the game. */
 function startQuiz() {
@@ -73,6 +75,9 @@ setQuestionSet();
 
 /* Leads to the next question. */
 const nextQuestion = () => {
+    choices.forEach(choice => {
+        choice.checked = false;
+    });
     questionCounter++;
     
     if (questionCounter > MAX_QUESTIONS || availableQuestions.length === 0){
@@ -101,11 +106,11 @@ const nextQuestion = () => {
 
 /* Checks your answer */
 const checkAnswer = (choice) => {
-    console.log("CHECKING...");
+
     const answer = +choice.id.split("-")[1];
     const isCorrect = answer === currentQuestion.answer;
-    const classToApply = (isCorrect) ? "correct" : "incorrect";
-    
+    classToApply = (isCorrect) ? "correct" : "incorrect";
+
     choice.parentElement.classList.add(classToApply);
     result.classList.add(classToApply);
     result.innerText = (isCorrect) ? "CORRECT" : "INCORRECT";
@@ -120,17 +125,7 @@ const checkAnswer = (choice) => {
     continueBtn.classList.remove("hidden");
     submitBtn.classList.add('hidden');
 
-    continueBtn.addEventListener("click", () => {
-        submitBtn.classList.remove('hidden');
-        continueBtn.classList.add("hidden");
 
-        choice.parentElement.classList.remove(classToApply);
-        result.innerText = "";
-        result.classList.remove(classToApply);
-        extraComments.innerText = "";
-        result.classList.add('hidden');
-        nextQuestion();
-    })
 }
 
 
@@ -141,5 +136,19 @@ submitBtn.addEventListener("click", () => {
     checkAnswer(document.querySelector(".choice-container > input[type='radio']:checked"));
 })
 
+continueBtn.addEventListener("click", () => {
+    submitBtn.classList.remove('hidden');
+    continueBtn.classList.add("hidden");
+
+ 
+    const choice = document.querySelector(".choice-container > input[type='radio']:checked");
+   
+    choice.parentElement.classList.remove(classToApply);
+    result.innerText = "";
+    result.classList.remove(classToApply);
+    extraComments.innerText = "";
+    result.classList.add('hidden');
+    nextQuestion();
+})
 
 

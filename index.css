@@ -225,6 +225,11 @@ h3 {
   width: 20%;
 }
 
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
 /* Responsive CSS */
 @media screen and (max-width: 720px) {
   body {

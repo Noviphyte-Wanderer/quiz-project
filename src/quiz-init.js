@@ -2,6 +2,8 @@ const quizTitle = document.getElementById('quiz-title');
 
 const topicLinks = [...document.getElementsByClassName("topic-link")];
 const numQuestions = document.getElementById("num-questions");
+const settingBtn = document.getElementById("settings-btn");
+const settingsContainer = document.getElementById('settings-container');
 
 const questionSetTable = {
     "algebra": "../json/algebraQuestions.json",
@@ -36,3 +38,7 @@ topicLinks.forEach(topic => {
 const setQuizType = () => {
     localStorage.setItem("quizType", JSON.stringify(quizType));
 }
+
+settingBtn.addEventListener("click", () => {
+    settingsContainer.classList.toggle("hidden");
+})

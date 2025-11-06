@@ -51,7 +51,10 @@
     }
 }
 
-
+.hidden{
+    visibility: hidden;
+    display: none;
+}
 
 #result{
     padding: 5px;
@@ -62,10 +65,6 @@
     font-weight: 800;
 }
 
-.hidden{
-    visibility: hidden;
-    display: none;
-}
 
 #submit{
     margin: 20px 0;

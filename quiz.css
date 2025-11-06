@@ -50,6 +50,11 @@
   margin: 0 20px;
 }
 
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
 #result {
   padding: 5px;
   margin-top: 10px;
@@ -57,11 +62,6 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
-}
-
-.hidden {
-  visibility: hidden;
-  display: none;
 }
 
 #submit {

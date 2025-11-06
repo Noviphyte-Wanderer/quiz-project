@@ -209,6 +209,22 @@ h3 {
   color: black;
 }
 
+#settings-container {
+  width: 100%;
+  font-size: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#settings-container * {
+  margin: 20px;
+}
+#settings-container #num-questions {
+  width: 20%;
+}
+
 /* Responsive CSS */
 @media screen and (max-width: 720px) {
   body {

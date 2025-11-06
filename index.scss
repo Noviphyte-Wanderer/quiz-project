@@ -182,6 +182,19 @@ h3{
     }
 }
 
+#settings-container{
+    width: 100%;
+    font-size: 2rem;
+    margin: 0 auto;
+    @include flex-adjust(row, center, center);
+    *{
+        margin: 20px;
+    }
+    #num-questions{
+        width: 20%;
+    }
+}
+
 /* Responsive CSS */
 @media screen and (max-width: 720px){
     body{

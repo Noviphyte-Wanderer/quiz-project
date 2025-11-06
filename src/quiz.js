@@ -144,6 +144,7 @@ continueBtn.addEventListener("click", () => {
     const choice = document.querySelector(".choice-container > input[type='radio']:checked");
    
     choice.parentElement.classList.remove(classToApply);
+    choice.checked = false;
     result.innerText = "";
     result.classList.remove(classToApply);
     extraComments.innerText = "";

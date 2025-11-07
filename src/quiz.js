@@ -17,7 +17,7 @@ const choices = [...document.getElementsByClassName('choice')];
 const submitBtn = document.getElementById('submit');
 const continueBtn = document.getElementById('continue')
 
-let MAX_QUESTIONS = 8;
+let MAX_QUESTIONS;
 
 //Booleans
 let acceptingAnswers = true;
@@ -42,7 +42,8 @@ function startQuiz() {
     questionCounter = 0;
 
     availableQuestions = [...questions];
-    MAX_QUESTIONS = availableQuestions.length;
+    MAX_QUESTIONS = localStorage.getItem("MAX_QUESTIONS") || availableQuestions.length;
+    console.log("MAX:", MAX_QUESTIONS);
     nextQuestion();
 }
 

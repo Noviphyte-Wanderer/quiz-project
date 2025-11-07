@@ -26,10 +26,12 @@
             <a href="./quiz.html" class="btn">BEGIN</a>
             <a href="#" class="btn" id="settings-btn">SETTINGS</a>
             <div class="hidden" id="settings-container">
-                
-                <label for="num-questions">Number of questions</label>
-                <input id="num-questions" type="number" min="1"/>
-                
+                <form action="./quiz.html" method="POST">
+                    <label for="num-questions">Number of questions</label>
+                    <input id="num-questions" type="number" min="1"/>
+                    <p id="max-questions"></p>
+                    <button type="submit" id="apply">APPLY</button>
+                </form>
             </div>
         </div>
     </main>

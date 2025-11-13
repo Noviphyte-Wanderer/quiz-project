@@ -53,16 +53,15 @@ const setQuestionSet = async () => {
     switch (quizType){
         case "algebra":
             questions = await fetchQuestions("../json/algebraQuestions.json");
-            
             break;
         case "vocabulary":
             questions = await fetchQuestions("../json/vocabQuestions.json");
-            
             break;
         case "history":
             questions = await fetchQuestions("../json/historyQuestions.json");
-            
-            console.log("Questions");
+            break;
+        case "chemistry":
+            questions = await fetchQuestions("../json/chemistryQuestions.json");
             break;
         default:
             questions = [];

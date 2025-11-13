@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is the SI unit for the amount of a substance?",
+        "choice1": "ton",
+        "choice2": "gram",
+        "choice3": "mole",
+        "choice4": "mile",
+        "answer": 3
+    },
+    {
+        "question": "What is the name of the element with an atomic number of 16?",
+        "choice1": "Argon",
+        "choice2": "Sulfur",
+        "choice3": "Chlorine",
+        "choice4": "Phosphorus",
+        "answer": 2
+    },
+    {
+        "question": "Calculate how many moles of Silicon are there in 15.6g of Silicon?",
+        "choice1": "0.555 mol",
+        "choice2": "0.421 mol",
+        "choice3": "0.654 mol",
+        "choice4": "0.589 mol",
+        "answer": 1
+    }
+]
